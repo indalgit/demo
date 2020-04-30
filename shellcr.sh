@@ -5,7 +5,7 @@ echo "what is your address $name1?"
 read name2
 echo "select your city?"
 PS3='Please enter  '
-options=("city1" "city2" "city3" "city4" "city5" "city6" "city7" "city8" "city9" "city10" "Quit")
+options=("city1" "city2" "city3" "city4" "city5" "city6" "city7" "city8" "city9" "city10")
 
 select opt in "${options[@]}"
 do
@@ -61,9 +61,7 @@ do
             
             break
             ;;
-        "Quit")
-            break
-            ;;
+        
         *) echo "invalid option $REPLY";;
     esac
 done
@@ -180,4 +178,7 @@ fi
 fi
 fi
 fi
+
+
+
 
