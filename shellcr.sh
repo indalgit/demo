@@ -74,13 +74,110 @@ done
 echo name $name1 address $name2  city $opt 
 
 
-
-
+if [ "$opt" = "${options[0]}" ] ;
+then
 
 cat > file1 << EOF1
 name $name1 
 address $name2 
-city $opt
+city ${options[0]}
 EOF1
 
+else
+if [ "$opt" = "${options[1]}" ];
+then
+cat > file2 << EOF2
+name $name1 
+address $name2 
+city ${options[1]}
+EOF2
+
+else
+if [ "$opt" = "${options[2]}" ];
+then
+cat > file3 << EOF3
+name $name1 
+address $name2 
+city ${options[2]}
+EOF3
+
+
+else
+if [ "$opt" = "${options[3]}" ];
+then
+cat > file4 << EOF4
+name $name1 
+address $name2 
+city ${options[3]}
+EOF4
+
+
+else
+if [ "$opt" = "${options[4]}" ];
+then
+cat > file5<< EOF5
+name $name1 
+address $name2 
+city ${options[4]}
+EOF5
+
+
+else
+if [ "$opt" = "${options[5]}" ];
+then
+cat > file6<< EOF6
+name $name1 
+address $name2 
+city ${options[5]}
+EOF6
+
+
+else
+if [ "$opt" = "${options[6]}" ];
+then
+cat > file7<< EOF7
+name $name1 
+address $name2 
+city ${options[6]}
+EOF7
+
+else
+if [ "$opt" = "${options[7]}" ];
+then
+cat > file8 << EOF8
+name $name1 
+address $name2 
+city ${options[7]}
+EOF8
+
+else
+if [ "$opt" = "${options[8]}" ];
+then
+cat > file9<< EOF9
+name $name1 
+address $name2 
+city ${options[8]}
+EOF9
+
+
+
+else
+if [ "$opt" = "${options[9]}" ];
+then
+cat > file10<< EOF10
+name $name1 
+address $name2 
+city ${options[9]}
+EOF10
+
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+fi
 
