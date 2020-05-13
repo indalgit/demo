@@ -54,7 +54,7 @@ $("#form-container").submit(function(event)
         type: "POST",
         url: "https://api3-saturn.uat.crowdstaffing.com/users/sign_in.json",
         data:({
-            email : $('#email').val(),
+            email : $('#uname').val(),
             password: $('#password').val()
         }),
         success: function(result)
