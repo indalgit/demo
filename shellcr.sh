@@ -81,6 +81,7 @@ address $name2
 city ${options[0]}
 EOF1
 
+
 else
 if [ "$opt" = "${options[1]}" ];
 then
@@ -179,6 +180,11 @@ fi
 fi
 fi
 
-
+file1=$1
+file1=$2
+while read line
+do
+echo $line >> "file1.json"
+done < "$file1"
 
 
